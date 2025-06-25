@@ -3,8 +3,6 @@ package com.ngoc.project1.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Data
