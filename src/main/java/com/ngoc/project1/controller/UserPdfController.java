@@ -7,10 +7,14 @@ import com.ngoc.project1.service.UserManagermentService;
 import com.ngoc.project1.service.UsersPdfService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.io.ByteArrayOutputStream;
 import java.util.List;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -22,19 +26,21 @@ public class UserPdfController {
     @Autowired
     private UsersRepo repo;
 
-    @GetMapping("/users/export/pdf")
+    @GetMapping("admin/users/export/pdf")
     public void exportToPDF(HttpServletResponse response) throws DocumentException, IOException {
+
         response.setContentType("application/pdf");
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss");
         String currentDate = dateFormat.format(new Date());
 
         String headerKey = "Content-Disposition";
-        String headerValue = String.format("attachment; filename==users_" +  currentDate + ".pdf");
+        String headerValue = "attachment; filename=users_" + currentDate + ".pdf";
         response.setHeader(headerKey, headerValue);
 
         List<OurUsers> usersList = repo.findAll(Sort.by("email").ascending());
 
         UsersPdfService exporter = new UsersPdfService(usersList);
         exporter.export(response);
+
     }
 }
