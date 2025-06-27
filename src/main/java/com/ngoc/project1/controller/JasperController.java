@@ -20,8 +20,6 @@ public class JasperController {
 
     @Autowired
     private JasperExportService jasperExportService;
-    @Autowired
-    private UsersRepo repo;
 
     @GetMapping("/export/pdf")
     public void getUsersPdf(HttpServletResponse response) throws JRException,IOException {
