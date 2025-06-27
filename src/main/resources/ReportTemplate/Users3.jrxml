@@ -55,44 +55,44 @@
 	<field name="email" class="java.lang.String"/>
 	<field name="city" class="java.lang.String"/>
 	<field name="role" class="java.lang.String"/>
-	<title height="196" splitType="Stretch">
-		<element kind="staticText" uuid="57aed2b1-4f4e-40a3-a6ad-54dae8dd4c5a" x="0" y="90" width="84" height="25" fontSize="16.0" bold="true">
-			<text><![CDATA[Bill to:]]></text>
+	<title height="206" splitType="Stretch">
+		<element kind="staticText" uuid="57aed2b1-4f4e-40a3-a6ad-54dae8dd4c5a" x="0" y="90" width="120" height="25" fontSize="16.0" bold="true">
+			<text><![CDATA[Bill to: Meta]]></text>
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</element>
 		<element kind="staticText" uuid="33274f5d-5b7e-4be2-a2ff-65d452a618ed" x="0" y="115" width="120" height="15">
-			<text><![CDATA[ABC Company]]></text>
+			<text><![CDATA[meta Company]]></text>
 		</element>
 		<element kind="line" uuid="806ce5df-1219-4876-ae0c-ca7405b1f246" x="0" y="80" width="556" height="1">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</element>
 		<element kind="staticText" uuid="1d3045ed-03d6-4253-a959-aeeb491b73ca" x="0" y="130" width="120" height="15">
-			<text><![CDATA[Company Address]]></text>
+			<text><![CDATA[300 Rickjames]]></text>
 		</element>
 		<element kind="staticText" uuid="235bf8b6-1e1e-49c7-b59f-7a46c30b8209" x="0" y="145" width="120" height="15">
-			<text><![CDATA[Company state1]]></text>
+			<text><![CDATA[Indiana]]></text>
 		</element>
 		<element kind="staticText" uuid="665f25c2-8663-4951-b699-1ab863bdeb76" x="0" y="160" width="120" height="15">
-			<text><![CDATA[Company state 2]]></text>
+			<text><![CDATA[Gary]]></text>
 		</element>
 		<element kind="staticText" uuid="b62092ec-9053-4f27-b387-9b25d2909a68" x="410" y="145" width="120" height="15">
-			<text><![CDATA[Ship state1]]></text>
+			<text><![CDATA[jordan]]></text>
 		</element>
 		<element kind="staticText" uuid="edbd74ac-0cbd-44c9-8a8e-ccf745191172" x="410" y="115" width="120" height="15">
-			<text><![CDATA[Ship name]]></text>
+			<text><![CDATA[GS17]]></text>
 		</element>
-		<element kind="staticText" uuid="139ebe8d-25b0-411e-986c-270015400874" x="410" y="90" width="84" height="25" fontSize="16.0" bold="true">
-			<text><![CDATA[Ship to:]]></text>
+		<element kind="staticText" uuid="139ebe8d-25b0-411e-986c-270015400874" x="410" y="90" width="139" height="25" fontSize="16.0" bold="true">
+			<text><![CDATA[Ship to: America]]></text>
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</element>
 		<element kind="staticText" uuid="dd52166a-1135-4931-adef-51e7972118bc" x="410" y="160" width="120" height="15">
-			<text><![CDATA[Ship state 2]]></text>
+			<text><![CDATA[afican]]></text>
 		</element>
 		<element kind="staticText" uuid="2d2f365d-7b12-4a8f-990d-ff528a2660bc" x="410" y="130" width="120" height="15">
-			<text><![CDATA[Ship Address]]></text>
+			<text><![CDATA[nigeria]]></text>
 		</element>
 		<element kind="staticText" uuid="0f86baff-6386-4f3f-b3fe-2388707babe8" x="415" y="10" width="50" height="20" hTextAlign="Right">
 			<text><![CDATA[Date:]]></text>
@@ -102,7 +102,7 @@
 			<expression><![CDATA[new java.util.Date()]]></expression>
 		</element>
 		<element kind="image" uuid="94883631-a913-43e2-b182-ab8d77d0181e" x="0" y="0" width="65" height="60" hImageAlign="Center">
-			<expression><![CDATA["invoice_logo.png"]]></expression>
+			<expression><![CDATA["ReportTemplate/invoice_logo.png"]]></expression>
 		</element>
 		<element kind="textField" uuid="3836ce65-eca3-4cad-a6de-b1818def0a2b" x="465" y="30" width="84" height="20" pattern="EEEEE dd MMMMM yyyy">
 			<expression><![CDATA["INV0001"]]></expression>
@@ -112,69 +112,70 @@
 			<box rightPadding="4"/>
 		</element>
 		<element kind="staticText" uuid="e622555d-198b-4ccd-a4a1-c59c53304058" x="95" y="0" width="210" height="25" fontSize="19.0" bold="true">
-			<text><![CDATA[Your company name]]></text>
+			<text><![CDATA[MeetUp LLC]]></text>
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</element>
 		<element kind="staticText" uuid="b8cc42fd-b569-497d-834d-7e854040ad18" x="95" y="55" width="205" height="15">
-			<text><![CDATA[Phone number, web address, ecc.]]></text>
+			<text><![CDATA[0123 789 456]]></text>
 		</element>
 		<element kind="staticText" uuid="c226e44d-3bb5-4145-b0b3-903bf1d79fde" x="95" y="25" width="205" height="15">
-			<text><![CDATA[Street address]]></text>
+			<text><![CDATA[15 avanue]]></text>
 		</element>
 		<element kind="staticText" uuid="b96f7183-44f8-43ad-ba60-43d8fbf50b6e" x="95" y="40" width="205" height="15">
-			<text><![CDATA[City, street, ZIP code]]></text>
+			<text><![CDATA[Hanoi, vietnam , 10000]]></text>
 		</element>
 	</title>
 	<columnHeader height="32">
-		<element kind="staticText" uuid="9afaa172-eb31-4883-9d9e-3b1035c9b981" positionType="Float" x="0" y="0" width="111" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
+		<element kind="staticText" uuid="9afaa172-eb31-4883-9d9e-3b1035c9b981" positionType="Float" x="0" y="0" width="50" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
 			<text><![CDATA[ID]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="18cd9885-a0a6-40d4-b85c-8021904acee9"/>
+			<box leftPadding="0" rightPadding="0" style="Column header"/>
 		</element>
-		<element kind="staticText" uuid="bc9f2d1b-eb02-4bf7-957f-22f50d1030eb" positionType="Float" x="111" y="0" width="111" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
-			<text><![CDATA[NAME]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d47ffdfe-cbac-4ac3-bc05-7ad4b6e1a82f"/>
-		</element>
-		<element kind="staticText" uuid="b111abae-18b6-4961-b65f-5e70cf046c7a" positionType="Float" x="222" y="0" width="111" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
+		<element kind="staticText" uuid="b111abae-18b6-4961-b65f-5e70cf046c7a" positionType="Float" x="190" y="0" width="170" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
 			<text><![CDATA[Email]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3895987e-373d-4313-98f6-5c19af89ab04"/>
 		</element>
-		<element kind="staticText" uuid="58461ae8-cb97-461c-babc-84c1e10514d2" positionType="Float" x="333" y="0" width="111" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
+		<element kind="staticText" uuid="58461ae8-cb97-461c-babc-84c1e10514d2" positionType="Float" x="370" y="0" width="77" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
 			<text><![CDATA[CITY]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="708e2f9f-2134-42a1-acdd-3bcfa0bd84ff"/>
 		</element>
-		<element kind="staticText" uuid="7a487ae4-d127-4a21-b6fb-49dcb33a91ae" positionType="Float" x="444" y="0" width="111" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
+		<element kind="staticText" uuid="7a487ae4-d127-4a21-b6fb-49dcb33a91ae" positionType="Float" x="460" y="0" width="76" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" style="Column header">
 			<text><![CDATA[ROLE]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0327c24-8c2e-4f58-aeab-5c34f50b5f27"/>
+		</element>
+		<element kind="staticText" uuid="bc9f2d1b-eb02-4bf7-957f-22f50d1030eb" positionType="Float" x="65" y="0" width="115" height="20" forecolor="#000000" fontName="Arial" fontSize="12.0" bold="true" italic="false" style="Column header">
+			<text><![CDATA[NAME]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d47ffdfe-cbac-4ac3-bc05-7ad4b6e1a82f"/>
 		</element>
 	</columnHeader>
 	<detail>
 		<band height="20">
-			<element kind="textField" uuid="adaad3bd-8dca-463b-9f4a-7d0744b2a542" positionType="Float" x="0" y="0" width="111" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
+			<element kind="textField" uuid="adaad3bd-8dca-463b-9f4a-7d0744b2a542" positionType="Float" x="0" y="0" width="50" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
 				<expression><![CDATA[$F{id}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="18cd9885-a0a6-40d4-b85c-8021904acee9"/>
 			</element>
-			<element kind="textField" uuid="0ddbecd1-9c1f-4d6d-9612-46938e577d1f" positionType="Float" x="111" y="0" width="111" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
+			<element kind="textField" uuid="0ddbecd1-9c1f-4d6d-9612-46938e577d1f" positionType="Float" x="65" y="0" width="115" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
 				<expression><![CDATA[$F{name}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d47ffdfe-cbac-4ac3-bc05-7ad4b6e1a82f"/>
 			</element>
-			<element kind="textField" uuid="4e65a227-18ae-47ac-8f5c-6d3613c98252" positionType="Float" x="222" y="0" width="111" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
+			<element kind="textField" uuid="4e65a227-18ae-47ac-8f5c-6d3613c98252" positionType="Float" x="190" y="0" width="170" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
 				<expression><![CDATA[$F{email}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3895987e-373d-4313-98f6-5c19af89ab04"/>
 			</element>
-			<element kind="textField" uuid="af39c57b-47d5-43fa-acb6-0e67976d89af" positionType="Float" x="333" y="0" width="111" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
+			<element kind="textField" uuid="af39c57b-47d5-43fa-acb6-0e67976d89af" positionType="Float" x="370" y="0" width="77" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
 				<expression><![CDATA[$F{city}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="708e2f9f-2134-42a1-acdd-3bcfa0bd84ff"/>
 			</element>
-			<element kind="textField" uuid="13e6773e-d4e7-4d05-9fce-772be6f2a348" positionType="Float" x="444" y="0" width="111" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
+			<element kind="textField" uuid="13e6773e-d4e7-4d05-9fce-772be6f2a348" positionType="Float" x="460" y="0" width="76" height="20" fontName="Arial" fontSize="12.0" textAdjust="StretchHeight" blankWhenNull="true" bold="false" style="Detail">
 				<expression><![CDATA[$F{role}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0327c24-8c2e-4f58-aeab-5c34f50b5f27"/>
 			</element>
 		</band>
 	</detail>
 	<lastPageFooter height="177">
-		<element kind="staticText" uuid="1a0d7088-5af7-4865-8be1-41ec5f51fb36" positionType="Float" x="-1" y="30" width="261" height="101">
-			<text><![CDATA[Your notes here]]></text>
+		<element kind="staticText" uuid="1a0d7088-5af7-4865-8be1-41ec5f51fb36" positionType="Float" x="-1" y="90" width="341" height="41">
+			<text><![CDATA[Note: We are sending this for the good of a company and the word. Then again what am i saying my time is over. How is this even possible.]]></text>
 			<box>
 				<topPen lineWidth="1.1" lineStyle="Dashed"/>
 				<leftPen lineWidth="1.1" lineStyle="Dashed"/>

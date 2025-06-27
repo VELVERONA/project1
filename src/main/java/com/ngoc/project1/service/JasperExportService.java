@@ -11,7 +11,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import javax.imageio.ImageIO;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -27,12 +26,12 @@ public class JasperExportService {
     public void generateReport (HttpServletResponse response) throws JRException , IOException {
         List<OurUsers> users = repo.findAll();
 
-        InputStream reportStream = new ClassPathResource("/Users3.jrxml").getInputStream();
+        InputStream reportStream = new ClassPathResource("/ReportTemplate/Users3.jrxml").getInputStream();
         JasperReport jasperReport = JasperCompileManager.compileReport(reportStream);
         JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(users);
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("users", dataSource);
-        InputStream imageStream = getClass().getResourceAsStream("/invoice_logo.png");
+        InputStream imageStream = getClass().getResourceAsStream("/ReportTemplate/invoice_logo.png");
         if (imageStream == null) {
             throw new RuntimeException("could not load image");
         }
